@@ -1,4 +1,5 @@
 import React from 'react'
+import Fade from 'react-reveal/Fade';
 
 export const BlogsList = ({blogItems}) => {
     
@@ -7,6 +8,7 @@ export const BlogsList = ({blogItems}) => {
     return (
 
         <>
+        <Fade>
             <div className = 'blogs'>
 
                 <a href = {url} target = '_blank' rel='noreferrer'>
@@ -15,6 +17,7 @@ export const BlogsList = ({blogItems}) => {
                 </a>
 
             </div>
+        </Fade>
         </>
     )
 }

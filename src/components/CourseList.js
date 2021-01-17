@@ -1,6 +1,7 @@
 import React from 'react'
 import noImage from '../assets/noimage.jpg'
 import i18njs from 'i18n-js'
+import Fade from 'react-reveal/Fade';
 
 export const CourseList = ({courses}) => {
 
@@ -8,8 +9,9 @@ export const CourseList = ({courses}) => {
 
     return (
         <>
-
+            <Fade>
             <div className = 'course'>
+                
                 <div className = 'cont-img-course'>
                     <img src = {image ? image : noImage} alt = {name}/>
                 </div>
@@ -20,6 +22,7 @@ export const CourseList = ({courses}) => {
                     <a href = {link} target = '_blank' rel='noreferrer'>Visit</a>
                 </div>
             </div>
+            </Fade>
         </>
     )
 }
