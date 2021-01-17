@@ -1,0 +1,29 @@
+
+.ui.secondary.pointing.menu {
+    border-bottom: 1px solid rgba(34,36,38,.15);
+}
+.ui.secondary.pointing.menu .item {
+    color:#6b6b6b;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 20px 25px;
+}
+.menu {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    padding: 0px 150px;
+    width: 100vw;
+    background-color: #ffffff !important;
+}
+.social {
+    display: flex;
+    width: 100vw;
+    justify-content: flex-end;
+    align-items: center;
+}
+.social img {
+    width: 100px;
+    width: 35px;
+    margin: 0px 10px;
+}

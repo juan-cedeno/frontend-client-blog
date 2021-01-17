@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+
 import './App.css';
+import 'react-notifications-component/dist/theme.css'
+import 'semantic-ui-css/semantic.min.css'
+import { AppRouter } from './routers/AppRouter';
+import { StoreContext } from './context/StoreContext';
+import { useState } from 'react';
+import ReactNotification from 'react-notifications-component'
+
 
 function App() {
+
+  const [loading, setLoading] = useState(false)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <StoreContext.Provider value = {{
+        loading,
+        setLoading
+      }} >
+        
+        <ReactNotification />
+        <AppRouter/>
+
+      </StoreContext.Provider>
     </div>
   );
 }

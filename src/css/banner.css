@@ -1,0 +1,29 @@
+.banner {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.img-banner {
+    width: 600px;
+    margin: 0px 50px;
+}
+.img-banner > img {
+    width: 100%;
+}
+.letter-banner {
+    max-width: 450px;
+}
+.letter-banner > h3 {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 10px 0px;
+    background: -webkit-linear-gradient(#233FAF, #01DDF9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.letter-banner >  p {
+    font-size: 20px;
+    margin: 14px 0px;
+}
